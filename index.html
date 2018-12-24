@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home:</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+
+ 
+	<!-- navbar -->
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+	<nav class="uk-navbar-container " id="top_nav" uk-navbar>
+    <a class="uk-navbar-item uk-logo the_logo" href="#"><img src="image/the_logo2.png" style="width: 49%"></a>
+
+    <div class="uk-navbar-right right_nav">
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li class="uk-active"><a href="#">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+		 
+    </div>
+	 <button id="s-nav" class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav"><span uk-icon="icon: menu"></span></button>
+	
+</nav>
+</div>
+
+<!-- off-canvas -->
+<div class="uk-offcanvas-content">
+   
+    <div id="offcanvas-nav" uk-offcanvas="overlay: false">
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Menu</li><br>
+                <li><a href="service.html"><span class="uk-margin-small-right" uk-icon="icon: table"></span> 
+                Service</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Media</a></li>
+                <li><a href="aboutus.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>About Us</a></li>
+                <li><a href="contact.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span>Blog</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- header slader image -->
+<div id="the_head" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="ratio: 7:3; animation: push; autoplay: true; pause-on-hover: true; min-height: 300; max-height: 600">
+
+    <ul class="uk-slideshow-items ">
+        <li>
+        	<div id="the_image"  class="uk-position-cover uk-animation-kenburns uk-animation-forward uk-transform-origin-center-left" style="height: 400px;">
+                <img src="image/firstbg.jpg" alt="" uk-cover>
+             
+            </div> 
+            <div class="uk-position-center uk-position-small" >
+                <h1 id="slider_content">Inspiration Facts:</h1>
+				<p id="slider_p_one" class="uk-visible@m">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a  electronic .</p>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-forward uk-transform-origin-center-left">
+            	<img src="image/secondbg.jpg" alt="" uk-cover>
+       		</div>
+       		<div class="uk-position-center uk-position-small" id="content_div">
+                <h1 id="slider_content_two">Inspiration Facts:</h1>
+                	<p id="slider_p_two" class="uk-visible@m">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled  leap into electronic .</p>
+            </div>
+        </li>
+        <li>
+        	<div class="uk-position-cover uk-animation-kenburns uk-animation-forward uk-transform-origin-center-left">
+           	 <img src="image/fifthbg.jpg" alt="" uk-cover>
+           	</div>
+           	<div class="uk-position-center uk-position-small" id="content_div">
+                <h1 id="slider_content_three">Inspiration Facts:</h1>
+                	<p id="slider_p_three" class="uk-visible@m">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled  leap into electronic </p>
+            </div>
+        </li>
+         <li>
+        	<div class="uk-position-cover uk-animation-kenburns uk-animation-forward uk-transform-origin-center-left">
+           	 <img src="image/fourthbg.jpg" alt="" uk-cover>
+           	</div>
+        </li>
+    </ul>
+    <div class="uk-position-bottom-center uk-position-small">
+        <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+            <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+
+        </ul>
+    </div>
+      
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+<!-- our service  -->
+<div class="uk-container uk-visible@m" id="second_container">
+	 <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" id="service_div">
+              <p>
+              	<i class="fas fa-microphone-alt" id="my_icon_one"></i>
+              </p>
+        </div>
+    </div>
+     <div>
+        <div class="uk-card uk-card-default uk-card-body" id="service_div">
+            <p><i class="fas fa-theater-masks" id="my_icon_two"></i></p>
+        </div>
+    </div>
+     <div>
+        <div class="uk-card uk-card-default uk-card-body" id="service_div">
+         <p><i class="fas fa-compact-disc" id="my_icon_three"></i></p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!-- Only for Small devices  -->
+<div uk-slider="center: true" class="uk-hidden@m">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light">
+
+        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+        	<!-- first icon -->
+            <li>
+                <div class="uk-card uk-card-default uk-card-body" id="service_div">
+	              <p>
+	              	<i class="fas fa-microphone-alt" id="my_icon_one"></i>
+	              </p>
+        		</div>
+            </li>
+            <li>
+                 <div class="uk-card uk-card-default uk-card-body" id="service_div">
+		            <p><i class="fas fa-theater-masks" id="my_icon_two"></i></p>
+		        </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-card-body" id="service_div">
+		         	<p><i class="fas fa-compact-disc" id="my_icon_three"></i></p>
+		        </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Bio -->
+<div class="uk-container" id="third_container">
+	<div id="bio_div" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+	    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+	        <img src="image/bio_image1.jpg" alt="" uk-cover>
+	        <canvas width="600" height="400"></canvas>
+	    </div>
+	    <div>
+	        <div class="uk-card-body">
+	            <h3 class="uk-card-title" id="bio_header">Who we are?</h3>
+	            <p id="bio_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="uk-container" id="fifth_container">
+	<h3 id="bio_header">Media</h3>
+	<div class="uk-flex-middle" uk-grid>
+    <div class="uk-width-2-3@m">
+         <div id="fifth_contn_div" class="uk-position-relative" uk-slideshow="animation: fade">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="image/slider_img3.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="image/slider_img2.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="image/Slider_img1.jpg" alt="" uk-cover>
+        </li><li>
+            <img src="image/Slider_img4.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="image/Slider_img5.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <div class="uk-position-bottom-center uk-position-small">
+        <ul class="uk-thumbnav">
+            <li uk-slideshow-item="0"><a href="#"><img src="image/slider_img3.jpg" width="100" alt=""></a></li>
+            <li uk-slideshow-item="1"><a href="#"><img src="image/slider_img2.jpg" width="100" alt=""></a></li>
+            <li uk-slideshow-item="2"><a href="#"><img src="image/slider_img1.jpg" width="100" alt=""></a></li>
+            <li uk-slideshow-item="3"><a href="#"><img src="image/slider_img4.jpg" width="100" alt=""></a></li>
+            <li uk-slideshow-item="4"><a href="#"><img src="image/slider_img5.jpg" width="100" alt=""></a></li>
+        </ul>
+    </div>
+
+</div>
+    </div>
+    <div class="uk-width-1-3@m">
+		<iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="100%" height="340" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+		 
+    </div>
+</div>
+</div>
+
+
+<!-- even and blog -->
+<div class="uk-container" id="six_container">
+	<div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+     <div class="uk-overflow-auto">
+     	<h3 id="bio_header">Upcoming Event</h3>
+     	<table class="uk-table uk-table-justify uk-table-divider uk-table-striped">
+    <thead>
+        <tr>
+            <th class="uk-width-small">Events</th>
+            <th class="uk-visible@m">Description</th>
+            <th class="uk-visible@m">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button id="all_btn" class="uk-button uk-button-default" type="button">More Details</button></td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button id="all_btn" class="uk-button uk-button-default" type="button">More Details</button></td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button id="all_btn" class="uk-button uk-button-default" type="button">More Details</button></td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td class="uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+            <td><button id="all_btn" class="uk-button uk-button-default" type="button">More Details</button></td>
+        </tr>
+    </tbody>
+</table>
+<p><span uk-icon="icon: chevron-right"></span> View all</p>
+     </div>
+     <div>
+     	<h3 id="bio_header">Recent Posts</h3>
+
+     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="image/blog_img1.jpg" alt="All in one on Vacation" uk-cover>
+        <canvas width="400" height="200"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body" id="blog_body">
+            <h3 class="uk-card-title">Life In Yichang City</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br><br>
+			<a href="blog_single_one.html" id="all_btn" class="uk-button uk-button-default uk-button-small">See more..</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- second -->
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+        <img src="image/blog_img2.jpg" alt="" uk-cover>
+        <canvas width="600" height="400"></canvas>
+    </div>
+    <div>
+        <div class="uk-card-body" id="blog_body">
+            <h3 class="uk-card-title"><strong>AIO</strong> On Vacation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<br><br>
+			<a href="blog_single_two.html" id="all_btn" class="uk-button uk-button-default uk-button-small">See more..</a>
+            </p>
+        </div>
+    </div>
+</div>
+<a href="blog.html"><span uk-icon="icon: chevron-right"></span> View all</a>
+ </div>
+</div>
+</div>
+
+
+<!-- footer -->
+<div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container">
+
+         <div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-4@m">
+        
+        	 <img src="image/the_logo2.png" style="width: 100px; height: 50px;">
+			 <br>
+			 <p>into electronic typesetting, remaining essentially unchanged. It was popularised in the versions of Lorem Ipsum..</p>
+        
+    </div>
+     <div class="uk-width-1-2@m">
+        <div class="uk-grid-divider uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+    <div>
+		 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Service</li></a>
+            <a href="#"><li>Media</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+    </div>
+    <div>
+    	 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Event</li></a>
+            <a href="#"><li>Videos</li></a>
+            <a href="#"><li>Prefomance</li></a>
+            <a href="#"><li>Culture</li></a>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+    </div>
+   <div class="uk-width-1-4@m">
+   		<br>
+   		<h4>follow us..</h4>
+   		<br>
+          <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+				 <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="soundcloud"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="google-plus"></a>
+				 
+    </div>
+ 
+</div>
+    </div>
+</div>
+<div id="copyright">
+	<p id="copyright_text">All-In-One Inc, © Created by Hibiku Inovation</p>
+</div>
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+</body>
+</html>

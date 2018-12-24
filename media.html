@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home:</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+	<nav class="uk-navbar-container " id="top_nav" uk-navbar>
+     <a class="uk-navbar-item uk-logo the_logo" href="#"><img src="image/the_logo2.png" style="width: 49%"></a>
+
+    <div class="uk-navbar-right right_nav">
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li class="uk-active"><a href="media.html">Media</a></li>
+            <li ><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>		 
+    </div>
+	 <button id="s-nav" class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav"><span uk-icon="icon: menu"></span></button>
+</nav>
+</div>
+
+<!-- off-canvas -->
+<div class="uk-offcanvas-content">
+   
+    <div id="offcanvas-nav" uk-offcanvas="overlay: false">
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Menu</li><br>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> 
+                Service</a></li>
+                <li><a href="media.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Media</a></li>
+                <li><a href="aboutus.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>About Us</a></li>
+                <li><a href="contact.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="blog.html"><span class="uk-margin-small-right" uk-icon="icon: trash"></span>Blog</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="service_bg">
+</div>
+<br>
+<br>
+<br>
+
+
+<div class="uk-container">
+	<h2 id="bio_header">Some Special Moment to cherish</h2>
+	<p>industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<br>
+	<h3 id="bio_header">Images</h3>
+	<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+				    	<img src="image/g1.jpg" alt="" data-alt="Image">   	
+	        	<hr>
+	        	 <div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body"> 
+	        	<img src="image/g1.jpg" alt="">
+	        	<hr>
+				<div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	       </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body"> 
+	        	<img src="image/g2.jpg" alt="">
+				<hr>
+	        	<div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	       </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	<img src="image/g3.jpg" alt="">
+	        	<hr>
+	        	 <div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	        </div>
+	    </div>
+	</div>
+	<br>
+	<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	<img src="image/g1.jpg" alt="">
+	        	<hr>
+	        	 <div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body"> 
+	        	<img src="image/g1.jpg" alt="">
+				<hr>
+	        	<div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	       </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	<img src="image/g1.jpg" alt="">
+	        	<hr>
+	        	<div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	        </div>
+	    </div>
+	     <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	<img src="image/g1.jpg" alt="">
+	        	<hr>
+	        	<div uk-lightbox>
+				    <a class="uk-button uk-button-default" href="image/g1.jpg" >
+				    	Zoom in
+				    </a>
+				</div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<!-- videos  -->
+
+<div class="uk-container">
+	<h3 id="bio_header">Videos</h3>
+	<div class="uk-child-width-expand@s uk-text-left" uk-grid>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	 <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="100%" height="240" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+	        	<hr>
+	        	 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+	        </div>
+	    </div>
+	    <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	 <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="100%" height="240" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+	        	<hr>
+	        	 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+	        </div>
+	    </div>
+	     <div>
+	        <div class="uk-card uk-card-default uk-card-body">
+	        	 <iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="100%" height="240" frameborder="0" allowfullscreen uk-responsive uk-video="automute: false"></iframe>
+	        	<hr>
+	        	 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+	        </div>
+	    </div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- footer -->
+<div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container">
+
+         <div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-4@m">
+        
+        	 <img src="image/the_logo2.png" style="width: 100px; height: 50px;">
+			 <br>
+			 <p>into electronic typesetting, remaining essentially unchanged. It was popularised in the versions of Lorem Ipsum..</p>
+        
+    </div>
+     <div class="uk-width-1-2@m">
+        <div class="uk-grid-divider uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+    <div>
+		 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Service</li></a>
+            <a href="#"><li>Media</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+    </div>
+    <div>
+    	 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Event</li></a>
+            <a href="#"><li>Videos</li></a>
+            <a href="#"><li>Prefomance</li></a>
+            <a href="#"><li>Culture</li></a>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+    </div>
+   <div class="uk-width-1-4@m">
+   		<br>
+   		<h4>follow us..</h4>
+   		<br>
+          <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+				 <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="soundcloud"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="google-plus"></a>
+				 
+    </div>
+ 
+</div>
+    </div>
+</div>
+<div id="copyright">
+	<p id="copyright_text">All-In-One Inc, © Created by Hibiku Inovation</p>
+</div>
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home:</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Change blog background to white -->
+    <link rel="stylesheet" type="text/css" href="blog.css">
+
+	 <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- navbar -->
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+	<nav class="uk-navbar-container " id="top_nav" uk-navbar>
+     <a class="uk-navbar-item uk-logo the_logo" href="#"><img src="image/the_logo2.png" style="width: 49%"></a>
+
+    <div class="uk-navbar-right right_nav">
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="uk-active"><a href="blog.html">Blog</a></li>
+        </ul>
+		 
+    </div>
+	 <button id="s-nav" class="uk-button uk-button-default uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav"><span uk-icon="icon: menu"></span></button>
+	
+</nav>
+</div>
+
+<!-- off-canvas -->
+<div class="uk-offcanvas-content">
+   
+    <div id="offcanvas-nav" uk-offcanvas="overlay: false">
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Menu</li><br>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> 
+                Service</a></li>
+                <li><a href="media.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Media</a></li>
+                <li><a href="aboutus.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>About Us</a></li>
+                <li><a href="contact.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="blog.html"><span class="uk-margin-small-right" uk-icon="icon: trash"></span>Blog</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- main page content  -->
+<!-- header image -->
+<div id="service_bg">
+</div>
+<br>
+<br> 
+
+<div class="uk-container" id="blog_details_cont"> 
+    <div class="uk-width-1-1@m"> 
+            <!-- blog article  -->
+            <article class="uk-article">
+            
+                <h1 class="uk-article-title"><a class="uk-link-reset" href="" id="bio_header">Heading</a></h1>
+
+                <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
+
+                <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ullamco laboris nisi ut aliquip.</p>
+                <img src="image/newblog_img.jpg" alt="">
+                    
+                <p id="blog_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.</p>
+
+                <p id="blog_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.</p>
+
+                 <p id="blog_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  officia deserunt mollit anim id est laborum.</p>
+
+        </article>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Related post -->
+<div class="uk-container">
+    <h3 id="bio_header">Related post</h3>
+    <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <img src="image/slider_img1.jpg" alt="">
+                <hr>
+                 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+                 <button class="uk-button uk-button-danger uk-width-1-1 uk-margin-small-bottom">Read more..</button>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                  <img src="image/blog_img2.jpg" alt="">
+                <hr>
+                 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+                 <button class="uk-button uk-button-danger uk-width-1-1 uk-margin-small-bottom">Read more..</button>
+            </div>
+        </div>
+         <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                  <img src="image/service_bg2.jpg" alt="">
+                <hr>
+                 <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
+                 <button class="uk-button uk-button-danger uk-width-1-1 uk-margin-small-bottom">Read more..</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- footer -->
+<div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container">
+
+         <div class="uk-text-center" uk-grid>
+    <div class="uk-width-1-4@m">
+        
+        	 <img src="image/the_logo2.png" style="width: 100px; height: 50px;">
+			 <br>
+			 <p>into electronic typesetting, remaining essentially unchanged. It was popularised in the versions of Lorem Ipsum..</p>
+        
+    </div>
+     <div class="uk-width-1-2@m">
+        <div class="uk-grid-divider uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+    <div>
+		 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Service</li></a>
+            <a href="#"><li>Media</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+    </div>
+    <div>
+    	 <div>
+        <h4>Menu</h4>
+        <ul class="uk-list uk-list-small">
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Event</li></a>
+            <a href="#"><li>Videos</li></a>
+            <a href="#"><li>Prefomance</li></a>
+            <a href="#"><li>Culture</li></a>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+    </div>
+   <div class="uk-width-1-4@m">
+   		<br>
+   		<h4>follow us..</h4>
+   		<br>
+          <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+				<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+				 <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="soundcloud"></a>
+				<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="google-plus"></a>
+				 
+    </div>
+ 
+</div>
+    </div>
+</div>
+<div id="copyright">
+	<p id="copyright_text">All-In-One Inc, © Created by Hibiku Inovation</p>
+</div>
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+</body>
+</html>
